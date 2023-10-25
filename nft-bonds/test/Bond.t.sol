@@ -5,13 +5,17 @@ import {Test, console2} from "forge-std/Test.sol";
 import {Bond} from "../src/Bond.sol";
 
 contract BondTest is Test {
+    Bond bond;
 
     function setUp() public {
         address owner = vm.addr(1);
         bond = new Bond(owner);
+    }
 
-        // vm.prank(owner);
-        bond.safeMint(address(1));
+    function testMint() public {
+        address owner = vm.addr(1);
+        bond.safeMint(owner, 0);
+        
         assertEq(bond.ownerOf(0), owner);
     }
 }
