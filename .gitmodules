@@ -10,3 +10,6 @@
 [submodule "nft-bonds/lib/tokenbound"]
 	path = nft-bonds/lib/tokenbound
 	url = https://github.com/tokenbound/contracts
+[submodule "nft-bonds/lib/openzeppelin-contracts"]
+	path = nft-bonds/lib/openzeppelin-contracts
+	url = https://github.com/Openzeppelin/openzeppelin-contracts
